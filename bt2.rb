@@ -14,7 +14,7 @@ if (c1 + c2 >= c3) & (c2 + c3 >= c1) & (c1 + c3 >= c2)
     puts "Chu vi: #{CV}"
     
     p = (c1 + c2 + c3) / 2
-    S = Math.pow((p - c1)*(p - c2)*(p - c3))
+    S = Math.sqrt(p*((p - c1)*(p - c2)*(p - c3)))
     puts "Dien tich: #{S}"
 else
     puts "Khum La mot tam giac"
